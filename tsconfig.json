@@ -13,7 +13,10 @@
     // но и js файлы
     "allowJs": true,
     // Для абсолютного импорта
-    // "baseUrl": ".",
+     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "moduleResolution": "node",
     // Если какая-либо библиотека не имеет default import,
     // лоадеры вроде ts-loader или babel-loader автоматически создают их

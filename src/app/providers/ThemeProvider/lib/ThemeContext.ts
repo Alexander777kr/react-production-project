@@ -1,5 +1,4 @@
 import {createContext} from 'react';
-import {create} from 'domain';
 
 export enum Theme {
     LIGHT = 'light',

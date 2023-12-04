@@ -13,9 +13,11 @@
     // но и js файлы
     "allowJs": true,
     // Для абсолютного импорта
-     "baseUrl": ".",
+    "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "*": [
+        "./src/*"
+      ]
     },
     "moduleResolution": "node",
     // Если какая-либо библиотека не имеет default import,
@@ -33,5 +35,8 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "./config/jest/setupTests.ts"
+  ]
 }

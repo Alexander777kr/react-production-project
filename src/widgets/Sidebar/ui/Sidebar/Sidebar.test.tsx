@@ -1,10 +1,11 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import { withTranslation } from 'react-i18next';
-import { renderWithTranslation } from 'shared/lib/tests/renderWithTranslation/renderWithTranslation';
-import { Sidebar } from './Sidebar';
+import { fireEvent, screen } from '@testing-library/react';
+import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
+import {
+    renderWithTranslation,
+} from 'shared/lib/tests/renderWithTranslation/renderWithTranslation';
 
-describe('Button', () => {
-    test('Test render', () => {
+describe('Sidebar', () => {
+    test('with only first param', () => {
         renderWithTranslation(<Sidebar />);
         expect(screen.getByTestId('sidebar')).toBeInTheDocument();
     });
